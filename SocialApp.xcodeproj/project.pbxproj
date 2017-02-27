@@ -18,6 +18,8 @@
 		C3A9E97A1E63F1D70040739D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9E9791E63F1D70040739D /* Constants.swift */; };
 		C3A9E97D1E63F3CE0040739D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9E97C1E63F3CE0040739D /* RoundButton.swift */; };
 		C3A9E97F1E63FC630040739D /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9E97E1E63FC630040739D /* FancyField.swift */; };
+		C3A9E9811E649EA80040739D /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9E9801E649EA80040739D /* LogoView.swift */; };
+		C3A9E9831E649F720040739D /* LogoLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9E9821E649F720040739D /* LogoLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		C3A9E9791E63F1D70040739D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3A9E97C1E63F3CE0040739D /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		C3A9E97E1E63FC630040739D /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		C3A9E9801E649EA80040739D /* LogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		C3A9E9821E649F720040739D /* LogoLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				C3A9E9761E63F14D0040739D /* FancyView.swift */,
 				C3A9E97C1E63F3CE0040739D /* RoundButton.swift */,
 				C3A9E97E1E63FC630040739D /* FancyField.swift */,
+				C3A9E9801E649EA80040739D /* LogoView.swift */,
+				C3A9E9821E649F720040739D /* LogoLabelView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 			files = (
 				C3A9E97F1E63FC630040739D /* FancyField.swift in Sources */,
 				C306B7611E63D542009ADE9C /* SignInVC.swift in Sources */,
+				C3A9E9831E649F720040739D /* LogoLabelView.swift in Sources */,
 				C3A9E97D1E63F3CE0040739D /* RoundButton.swift in Sources */,
 				C306B75F1E63D542009ADE9C /* AppDelegate.swift in Sources */,
+				C3A9E9811E649EA80040739D /* LogoView.swift in Sources */,
 				C3A9E9771E63F14D0040739D /* FancyView.swift in Sources */,
 				C3A9E97A1E63F1D70040739D /* Constants.swift in Sources */,
 			);
