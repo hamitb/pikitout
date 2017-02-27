@@ -144,7 +144,7 @@
                                                                         </constraints>
                                                                         <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
-                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
@@ -172,6 +172,9 @@
                                                 <state key="normal" title="Sign In">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YyO-1d-RNg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -192,6 +195,10 @@
                             <constraint firstItem="Oex-zf-mZf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vW0-CH-rQh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="BoM-iQ-sTh" id="Hn1-SY-KJI"/>
+                        <outlet property="passwordField" destination="3en-zf-JWS" id="URg-xn-RCf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

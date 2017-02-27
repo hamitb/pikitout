@@ -13,6 +13,10 @@ import Firebase
 import FirebaseAuth
 
 class SignInVC: UIViewController {
+    
+    
+    @IBOutlet weak var emailField: FancyField!
+    @IBOutlet weak var passwordField: FancyField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +54,25 @@ class SignInVC: UIViewController {
                 print("HMTBRK: Successfully authenticated with Firebase.")
             }
         })
+    }
+    
+    
+    @IBAction func signInTapped(_ sender: Any) {
+        if let email = emailField.text, let password = passwordField.text {
+            FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+                if error == nil {
+                    print("HMTBRK: Sign In with email password is successful.")
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+                        if error != nil {
+                            print("HMTBRK: _EMAIL_ Unable to authenticate with Firebase ")
+                        } else {
+                            print("HMTBRK: _EMAIL_ Successfully authenticated with Firebase")
+                        }
+                    })
+                }
+            })
+        }
     }
 }
 
