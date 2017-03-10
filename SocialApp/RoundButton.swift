@@ -18,7 +18,7 @@ class RoundButton: UIButton {
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1, height: 1)*/
         
-        layer.cornerRadius = 20.0
+        layer.cornerRadius = 25.0
     }
 
 }
