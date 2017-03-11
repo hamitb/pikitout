@@ -38,12 +38,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let post = posts[indexPath.row]
-        print("HMTBRK: \(post.caption)")
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath)
-        
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as? postCell {
+            cell.configureCell(post: post)
+            return cell
+        }else {
+            return postCell()
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
