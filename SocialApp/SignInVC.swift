@@ -24,9 +24,9 @@ class SignInVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+        /*if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
             performSegue(withIdentifier: "goToFeed", sender: nil)
-        }
+        }*/
     }
 
     @IBAction func facebookBtnTapped(_ sender: Any) {
@@ -53,7 +53,8 @@ class SignInVC: UIViewController {
             } else {
                 print("HMTBRK: Successfully authenticated with Firebase.")
                 if let user = user {
-                    self.completeSignIn(id: user.uid)
+                    let userData = ["provider": credential.provider]
+                    self.completeSignIn(id: user.uid, userData: userData)
                 }
                 
             }
@@ -67,7 +68,8 @@ class SignInVC: UIViewController {
                 if error == nil {
                     print("HMTBRK: Sign In with email password is successful.")
                     if let user = user {
-                        self.completeSignIn(id: user.uid)
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
                     }
                     
                 } else {
@@ -77,7 +79,8 @@ class SignInVC: UIViewController {
                         } else {
                             print("HMTBRK: _EMAIL_ Successfully authenticated with Firebase")
                             if let user = user {
-                                self.completeSignIn(id: user.uid)
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
                             }
                         }
                     })
@@ -86,7 +89,8 @@ class SignInVC: UIViewController {
         }
     }
     
-    func completeSignIn(id: String) {
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUser(uid: id, userdata: userData)
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("HMTBRK: Data saved to keychain - \(keychainResult))")
         performSegue(withIdentifier: "goToFeed", sender: nil)

@@ -231,11 +231,11 @@
                                 <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="520" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hkc-AM-R58">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="520" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hkc-AM-R58">
                                 <rect key="frame" x="0.0" y="70" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="520" id="6Ds-02-uk9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="520" id="6Ds-02-uk9" customClass="postCell" customModule="SocialApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="520"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Ds-02-uk9" id="Vfh-b3-V35">
@@ -342,6 +342,15 @@
                                                 <constraint firstItem="RdZ-TA-Lwf" firstAttribute="leading" secondItem="Vfh-b3-V35" secondAttribute="leading" id="zrC-2H-QcQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="0zQ-Xm-nYA" id="chX-pT-oAS"/>
+                                            <outlet property="likeButton" destination="gTO-D9-biK" id="1zG-xt-bsa"/>
+                                            <outlet property="likesLabel" destination="HcS-YE-5WM" id="Vwa-Cz-VaD"/>
+                                            <outlet property="postImage" destination="RdZ-TA-Lwf" id="6Ku-fj-7Tb"/>
+                                            <outlet property="profileImage" destination="AdW-Hn-Sv8" id="FV1-hA-CvZ"/>
+                                            <outlet property="usernameLabel" destination="4Zq-tn-bAa" id="ipI-r6-pZ5"/>
+                                            <outlet property="usernameLabelBottom" destination="QjJ-qW-mdU" id="Xh4-H2-Oby"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

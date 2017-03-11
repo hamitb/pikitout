@@ -24,6 +24,8 @@
 		C3A9E97F1E63FC630040739D /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9E97E1E63FC630040739D /* FancyField.swift */; };
 		C3A9E9811E649EA80040739D /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9E9801E649EA80040739D /* LogoView.swift */; };
 		C3A9E9831E649F720040739D /* LogoLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A9E9821E649F720040739D /* LogoLabelView.swift */; };
+		C3D177CE1E73362100B93C02 /* postCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D177CD1E73362100B93C02 /* postCell.swift */; };
+		C3D177D11E73789F00B93C02 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D177D01E73789F00B93C02 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		C3A9E97E1E63FC630040739D /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		C3A9E9801E649EA80040739D /* LogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		C3A9E9821E649F720040739D /* LogoLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoLabelView.swift; sourceTree = "<group>"; };
+		C3D177CD1E73362100B93C02 /* postCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = postCell.swift; sourceTree = "<group>"; };
+		C3D177D01E73789F00B93C02 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 		C306B75D1E63D542009ADE9C /* SocialApp */ = {
 			isa = PBXGroup;
 			children = (
+				C3D177CF1E73788500B93C02 /* Services */,
 				C39A855F1E69746C00E593E0 /* Protocols & Extensions */,
 				C3A9E9781E63F1BB0040739D /* Util */,
 				C3A9E9751E63D76B0040739D /* Model */,
@@ -134,6 +139,7 @@
 				C3A9E9821E649F720040739D /* LogoLabelView.swift */,
 				C34870151E661FA1000CA48E /* GradientView.swift */,
 				C34870171E669B61000CA48E /* RoundUserImage.swift */,
+				C3D177CD1E73362100B93C02 /* postCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -151,6 +157,14 @@
 				C3A9E9791E63F1D70040739D /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		C3D177CF1E73788500B93C02 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C3D177D01E73789F00B93C02 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		D0F7D74ADAB2851FD02F7929 /* Frameworks */ = {
@@ -287,8 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C34870181E669B61000CA48E /* RoundUserImage.swift in Sources */,
+				C3D177D11E73789F00B93C02 /* DataService.swift in Sources */,
 				C34870131E65436D000CA48E /* FeedVC.swift in Sources */,
 				C3A9E97F1E63FC630040739D /* FancyField.swift in Sources */,
+				C3D177CE1E73362100B93C02 /* postCell.swift in Sources */,
 				C34870161E661FA1000CA48E /* GradientView.swift in Sources */,
 				C306B7611E63D542009ADE9C /* SignInVC.swift in Sources */,
 				C3A9E9831E649F720040739D /* LogoLabelView.swift in Sources */,
