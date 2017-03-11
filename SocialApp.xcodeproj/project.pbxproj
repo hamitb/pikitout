@@ -14,6 +14,7 @@
 		C306B7661E63D542009ADE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C306B7651E63D542009ADE9C /* Assets.xcassets */; };
 		C306B7691E63D542009ADE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C306B7671E63D542009ADE9C /* LaunchScreen.storyboard */; };
 		C306B7711E63D587009ADE9C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C306B7701E63D587009ADE9C /* GoogleService-Info.plist */; };
+		C3451D7C1E7489BE00E7C549 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3451D7B1E7489BE00E7C549 /* Post.swift */; };
 		C34870131E65436D000CA48E /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34870121E65436D000CA48E /* FeedVC.swift */; };
 		C34870161E661FA1000CA48E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34870151E661FA1000CA48E /* GradientView.swift */; };
 		C34870181E669B61000CA48E /* RoundUserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34870171E669B61000CA48E /* RoundUserImage.swift */; };
@@ -40,6 +41,7 @@
 		C306B7681E63D542009ADE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C306B76A1E63D542009ADE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C306B7701E63D587009ADE9C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3451D7B1E7489BE00E7C549 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C34870121E65436D000CA48E /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		C34870151E661FA1000CA48E /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		C34870171E669B61000CA48E /* RoundUserImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundUserImage.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		C3A9E9751E63D76B0040739D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C3451D7B1E7489BE00E7C549 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				C306B7611E63D542009ADE9C /* SignInVC.swift in Sources */,
 				C3A9E9831E649F720040739D /* LogoLabelView.swift in Sources */,
 				C3A9E97D1E63F3CE0040739D /* RoundButton.swift in Sources */,
+				C3451D7C1E7489BE00E7C549 /* Post.swift in Sources */,
 				C306B75F1E63D542009ADE9C /* AppDelegate.swift in Sources */,
 				C3A9E9811E649EA80040739D /* LogoView.swift in Sources */,
 				C3A9E9771E63F14D0040739D /* FancyView.swift in Sources */,
