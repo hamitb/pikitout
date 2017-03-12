@@ -24,9 +24,9 @@ class SignInVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        /*if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
             performSegue(withIdentifier: "goToFeed", sender: nil)
-        }*/
+        }
     }
 
     @IBAction func facebookBtnTapped(_ sender: Any) {

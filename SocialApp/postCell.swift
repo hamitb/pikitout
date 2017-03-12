@@ -32,7 +32,7 @@ class postCell: UITableViewCell {
         self.post = post
         self.descriptionLabel.text = post.caption
         self.likesLabel.setTitle("\(post.likes) likes", for: .normal)
-        
-        
     }
+    
+    
 }
